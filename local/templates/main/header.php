@@ -859,7 +859,11 @@
         </NAV>
     </HEADER>
     <DIV class="shadow"></DIV>
-    <DIV class="content">
+	<?if ($GLOBALS["APPLICATION"]->GetCurPage(true) == "/index.php")
+		echo '<DIV class="content">';
+	else
+		echo '<DIV class="content" style="background: #f2f2f2">';
+?> 
         <SCRIPT type="text/javascript">
             var _rutarget = window._rutarget || [];
             _rutarget.push({'event': 'otherPage'});
@@ -1038,132 +1042,7 @@
                     </DIV>
                 </A>
             </DIV>
-            <H2>Актуальные категории</H2>
-            <DIV class="actual scrollslider row" data-slimslides="3" data-wideslides="4">
-			
-                <DIV class="cat">
-                    <A href="/muzhskoe/obuv/krossovki/zimnie/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/muzhskie-krossovki-brandshop-001-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Зимние кроссовки</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/muzhskoe/odezhda/svitery/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-muzhskie-svitera-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Мужские свитера</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/muzhskoe/odezhda/futbolki/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-muzhskoe-futbolki-november-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Мужские футболки</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/zhenskoe/obuv/krossovki/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-zhenskie-krossovki-1-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Женские кроссовки</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/muzhskoe/verhnyaya-odezhda/kurtki/zimnie/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-zimnie-kurtki-november-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Зимние куртки</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/zhenskoe/odezhda/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-zhenskaya-odezhda-1-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Женская одежда</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/brendovie-aksessuary/bagazh/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/sumki-rukzaki-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Рюкзаки и сумки</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/brendovie-aksessuary/dlya-gadzhetov/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-gadzhety-416x330-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Аксессуары для гаджетов</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/brendovie-aksessuary/sladosti/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-sladosti-1-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Сладости</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/muzhskoe/aksessuary/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-muzhskie-aksessuary-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Мужские аксессуары</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-                <DIV class="cat">
-                    <A href="/krasota/">
-                        <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/brandshop-krasota-october-1-416x330.jpg">
-                        </DIV>
-                        <DIV class="info vmiddle">
-                            <DIV>
-                                <H3>Товары для красоты и здоровья</H3>
-                            </DIV>
-                        </DIV>
-                    </A>
-                </DIV>
-            </DIV>
-			<?endif;?>
+            <?endif;?>
 <?if ($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"):?> 			
 <div id="mfilter-content-container">
     <div class="centered row">

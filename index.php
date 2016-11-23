@@ -1,12 +1,53 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
-?><br>
- </h2>
+?><h2>Актуальные категории</h2>
  <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"",
-Array()
+	"bitrix:photo.section",
+	"slidercat",
+	Array(
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"BROWSER_TITLE" => "-",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"FIELD_CODE" => array(0=>"",1=>"ID",2=>"NAME",3=>"SORT",4=>"PREVIEW_PICTURE",5=>"",),
+		"FILTER_NAME" => "arrFilter",
+		"IBLOCK_ID" => "8",
+		"IBLOCK_TYPE" => "content",
+		"LINE_ELEMENT_COUNT" => "3",
+		"MESSAGE_404" => "",
+		"META_DESCRIPTION" => "-",
+		"META_KEYWORDS" => "-",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Фотографии",
+		"PAGE_ELEMENT_COUNT" => "20",
+		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"SECTION_CODE" => "",
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_URL" => "",
+		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+		"SET_LAST_MODIFIED" => "N",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N"
+	)
 );?>
 <h2>Тренды сезона</h2>
 <?$APPLICATION->IncludeComponent(
