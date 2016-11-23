@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
-?><h2><br>
+?><br>
  </h2>
  <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",

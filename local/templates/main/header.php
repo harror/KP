@@ -100,36 +100,22 @@
                     <DIV class="shadow"></DIV>
                 </FORM>
             </DIV>
-			<?
-			global $USER; 
-			if (!$USER->IsAuthorized()):
-			?>
-            <DIV class="user">
-                <SPAN>Вход</SPAN>
-                <FORM class="tooltip minilogin pushright" action="/bitrix/admin/index.php?login=yes" method="post">
-                    <DIV class="row"><LABEL>Логин/E-Mail</LABEL><INPUT name="USER_LOGIN" type="text">
-                        <LABEL>Пароль</LABEL><INPUT name="USER_PASSWORD" type="password">
-                        <INPUT name="redirect" type="hidden" value="/">
-                    </DIV>
-                    <DIV class="bottom row">
-                        <DIV class="col-60"><SPAN><A href="/forgotten/">Забыли
-                           пароль?</A><BR><A href="/register/">Регистрация</A>
-                           </SPAN>
-                        </DIV>
-                        <DIV class="col-40"><BUTTON name="Login" class="btn btn-orange btn-fluid"
-                                                    type="submit">Вход</BUTTON>                         </DIV>
-                    </DIV>
-                </FORM>
-				<?$APPLICATION->IncludeComponent("bitrix:system.auth.form","",Array(
-     "REGISTER_URL" => "register.php",
-     "FORGOT_PASSWORD_URL" => "",
-     "PROFILE_URL" => "profile.php",
-     "SHOW_ERRORS" => "Y" 
-     )
+			
+           
+                
+				<?$APPLICATION->IncludeComponent(
+	"bitrix:system.auth.form",
+	"auth",
+	Array(
+		"FORGOT_PASSWORD_URL" => "",
+		"PROFILE_URL" => "",
+		"REGISTER_URL" => "",
+		"SHOW_ERRORS" => "N"
+	)
 );?>
 				
-            </DIV>
-			<?endif?>
+
+			
         </DIV>
         <NAV>
             <DIV class="logo">
