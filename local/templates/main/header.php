@@ -865,97 +865,74 @@
             var _rutarget = window._rutarget || [];
             _rutarget.push({'event': 'otherPage'});
         </SCRIPT>
-        <DIV class="slideshow row">
-            <A href="/news/gornye-botinki-fracap-istorija-odnoj-veschi/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-fracap-new-in-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2>FRACAP</H2>
-                    <P>Детальный разбор силуэтов итальянской марки, воплощающих собой<BR>образ
-                        совершенных горных ботинок
-                    </P>
-                </DIV>
-            </A>
-            <A href="/cp-company/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-cp-company-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2>C.P. Company</H2>
-                    <P>Одежда из новой осенне-зимней коллекции, а также разнообразные<BR>товары из
-                        подростковой линейки U16
-                    </P>
-                </DIV>
-            </A>
-            <A href="/asics/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-asics-snowflake-pack-gore-tex-pack-podgotovka-k-zime-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2>ASICS Snowflake Pack<BR>&amp; Gore-Tex Pack</H2>
-                    <P>Японский бренд радует сразу четырьмя расцветками в предверии<BR>суетного
-                        предновогоднего сезона. Старт продаж состоится 1 ноября
-                    </P>
-                </DIV>
-            </A>
-            <A href="/nike/">
-                <IMG alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-nike-new-in-presto-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2> Кроссовки Nike </H2>
-                    <P>Большой выбор мужских и женских кроссовок лидирующего<BR>мирового
-                        бренда
-                    </P>
-                </DIV>
-            </A>
-            <A href="/barbour/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-barbour-new-in-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2>Barbour</H2>
-                    <P>Натуральные оттенки и традиции британской загородной жизни<BR>в новой
-                        коллекции марки
-                    </P>
-                </DIV>
-            </A>
-            <A href="/sneakerhead/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-5-relizov-reebok-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2> Сезонные релизы Reebok </H2>
-                    <P>Пять коллабораций на основе силуэтов Instapump Fury,<BR>баскетбольной модели
-                        Question и сдержанных кроссовок Bolton.<BR>Старт продаж состоится 5
-                        ноября
-                    </P>
-                </DIV>
-            </A>
-            <A href="/norse-projects/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-norse-projects-new-in-3-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2>Norse Projects</H2>
-                    <P>Минималистичные, лаконичные и нужные предметы гардероба<BR>в новой коллекции
-                        датского бренда
-                    </P>
-                </DIV>
-            </A>
-            <A href="/penfield/">
-                <IMG
-                    alt="" data-lazy="https://brandshop.ru//image/cache/data/slider/slider-1920x800/desktop-slider-penfield-new-in-1920x800-1920x800.jpg">
-                <DIV class="billet" style="left: 4%; top: 32%; width: 53%; color: rgb(255, 255, 255);">
-                    <SPAN></SPAN>
-                    <H2>Penfield</H2>
-                    <P>Новинки бренда, известного своей практичной одеждой<BR>для длительного
-                        пребывания на свежем воздухе
-                    </P>
-                </DIV>
-            </A>
-        </DIV>
-        <DIV class="centered main home">
+		<?if ($GLOBALS["APPLICATION"]->GetCurPage(true) == "/index.php"):?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:photo.section", 
+	"slider1", 
+	array(
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"BROWSER_TITLE" => "-",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"FIELD_CODE" => array(
+			0 => "ID",
+			1 => "NAME",
+			2 => "SORT",
+			3 => "PREVIEW_TEXT",
+			4 => "PREVIEW_PICTURE",
+			5 => "",
+		),
+		"FILTER_NAME" => "arrFilter",
+		"IBLOCK_ID" => "4",
+		"IBLOCK_TYPE" => "content",
+		"LINE_ELEMENT_COUNT" => "3",
+		"MESSAGE_404" => "",
+		"META_DESCRIPTION" => "-",
+		"META_KEYWORDS" => "-",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Фотографии",
+		"PAGE_ELEMENT_COUNT" => "20",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "37",
+			2 => "38",
+		),
+		"SECTION_CODE" => "",
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_URL" => "",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"SET_LAST_MODIFIED" => "N",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N",
+		"COMPONENT_TEMPLATE" => "slider1"
+	),
+	false
+);?>		
+        
+		<?endif;?>
+	   <DIV class="centered main home">
+	   <?if ($GLOBALS["APPLICATION"]->GetCurPage(true) == "/index.php"):?> 
             <H2><A href="/new/">Новые поступления</A></H2>
             <DIV class="row newproducts">
                 <A title="Nike Мужские зимние кроссовки Air Max 95 Sneakerboot Dark Loden/Cargo Khaki/Bright"
@@ -1064,6 +1041,7 @@
             </DIV>
             <H2>Актуальные категории</H2>
             <DIV class="actual scrollslider row" data-slimslides="3" data-wideslides="4">
+			
                 <DIV class="cat">
                     <A href="/muzhskoe/obuv/krossovki/zimnie/">
                         <DIV class="img"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/muzhskie-krossovki-brandshop-001-416x330.jpg">
@@ -1186,3 +1164,8 @@
                     </A>
                 </DIV>
             </DIV>
+			<?endif;?>
+<?if ($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"):?> 			
+<div id="mfilter-content-container">
+    <div class="centered row">
+<?endif;?>

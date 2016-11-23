@@ -1,64 +1,16 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die(); ?>
 <?use Bitrix\Main\Localization\Loc;use Bitrix\Main\Page\Asset;Loc::loadMessages(__FILE__);?>
-<DIV class="row news">
-    <DIV class="left">
-        <DIV onclick="window.location = '/news/asics-tartufo-pack-lakomstvo-dlja-iskushennyh/'">
-            <DIV class="img vmiddle"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/mini-635x430a.jpg">
-            </DIV>
-            <DIV class="info">
-                <A class="minitag green"
-                   href="/news/">Новости</A>
-                <DIV class="text">
-                    <H3><A href="/news/asics-tartufo-pack-lakomstvo-dlja-iskushennyh/">ASICS
-                            Tartufo Pack: лакомство для искушённых</A>
-                    </H3>
-                    <P>Пополнение в&nbsp;линейке осенних релизов ASICS, принесшее две новых
-                        расцветки Gel-Lyte V
-                    </P>
-                </DIV>
-                <DIV class="date">2016-11-02 14:00:27</DIV>
-            </DIV>
-        </DIV>
-    </DIV>
-    <DIV class="right">
-        <DIV class="record row" onclick="window.location = '/news/native-demokratichnyj-futurizm/'">
-            <DIV class="img vmiddle"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/native-demokratichnyj-futurizm-1040x695-3-485x350a.jpg">
-            </DIV>
-            <DIV class="info">
-                <DIV class="date">2016-11-01 16:34:35</DIV>
-                <H3><A href="/news/native-demokratichnyj-futurizm/">Native:
-                        демократичный футуризм</A>
-                </H3>
-            </DIV>
-        </DIV>
-        <DIV class="record row" onclick="window.location = '/news/arctic-explorer-ledokol-rossijskoj-mody/'">
-            <DIV class="img vmiddle"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/mini-485x350a.jpg">
-            </DIV>
-            <DIV class="info">
-                <DIV class="date">2016-10-31 17:34:38</DIV>
-                <H3><A
-                        href="/news/arctic-explorer-ledokol-rossijskoj-mody/">Arctic
-                        Explorer: ледокол российской моды</A>
-                </H3>
-            </DIV>
-        </DIV>
-        <DIV class="record row" onclick="window.location = '/news/gornye-botinki-fracap-istorija-odnoj-veschi/'">
-            <DIV class="img vmiddle"><IMG src="<?=SITE_TEMPLATE_PATH;?>/images/mini-gornye-botinki-fracap-istorija-odnoj-veschi-775x517-485x350a.jpg">
-            </DIV>
-            <DIV class="info">
-                <DIV class="date">2016-10-31 09:53:27</DIV>
-                <H3><A href="/news/gornye-botinki-fracap-istorija-odnoj-veschi/">Горные
-                        ботинки Fracap: история одной вещи</A>
-                </H3>
-            </DIV>
-        </DIV>
-        <A class="btn btn-aqua" href="/news/">Смотреть
-            все новости</A>
-    </DIV>
+<DIV class="row">
+    
 </DIV>
-
+<?if ($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"):?> 
+</div>
+</div>
+<?endif;?>
+<?if ($GLOBALS["APPLICATION"]->GetCurPage(true) == "/index.php"):?> 
 <H2><A href="/brandlist/">Бренды</A></H2>
 <DIV class="brands scrollslider row" data-slimslides="4" data-wideslides="4">
+
     <A
         class="brand" href="/norse-projects/">
         <DIV class="center">
@@ -718,7 +670,9 @@
         </DIV>
     </A>
 </DIV>
+<?endif;?>
 </DIV>
+
 <DIV id="popupinfo"></DIV>
 </DIV>
 </DIV>
