@@ -1319,7 +1319,7 @@ function tableSwap(e) {
 function addLink() {
     var e, t = document.getElementsByTagName("body")[0];
     e = window.getSelection();
-    var a = "<br /><br /> Источник: <a href='" + document.location.href + "'>" + document.location.href + "</a><br />Copyright &copy; brandshop.ru",
+    var a = "",
         i = e + a,
         s = document.createElement("div");
     s.style.position = "absolute", s.style.left = "-99999px", t.appendChild(s), s.innerHTML = i, e.selectAllChildren(s), window.setTimeout(function() {
