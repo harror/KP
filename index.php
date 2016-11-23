@@ -1,14 +1,20 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
-?>
+?><h2><br>
+ </h2>
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section.list",
+	"",
+Array()
+);?>
 <h2>Тренды сезона</h2>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",
 	".default",
 	Array(
 		"ACTION_VARIABLE" => "action",
-		"ADD_PICT_PROP" => "MORE_PHOTO",
+		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"ADD_TO_BASKET_ACTION" => "ADD",
@@ -17,15 +23,17 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"AJAX_OPTION_HISTORY" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
+		"BACKGROUND_IMAGE" => "-",
 		"BASKET_URL" => "/personal/cart/",
 		"BROWSER_TITLE" => "-",
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
-		"COMPONENT_TEMPLATE" => "",
+		"COMPONENT_TEMPLATE" => ".default",
 		"CONVERT_CURRENCY" => "N",
 		"DETAIL_URL" => "",
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
 		"ELEMENT_SORT_FIELD" => "sort",
@@ -48,10 +56,10 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"OFFERS_CART_PROPERTIES" => array(0=>"COLOR_REF",1=>"SIZES_SHOES",2=>"SIZES_CLOTHES",),
+		"OFFERS_CART_PROPERTIES" => array(0=>"SIZES_SHOES",1=>"SIZES_CLOTHES",2=>"COLOR_REF",),
 		"OFFERS_FIELD_CODE" => array(0=>"",1=>"",),
 		"OFFERS_LIMIT" => "5",
-		"OFFERS_PROPERTY_CODE" => array(0=>"COLOR_REF",1=>"SIZES_SHOES",2=>"SIZES_CLOTHES",3=>"",),
+		"OFFERS_PROPERTY_CODE" => array(0=>"SIZES_SHOES",1=>"SIZES_CLOTHES",2=>"COLOR_REF",3=>"",),
 		"OFFERS_SORT_FIELD" => "sort",
 		"OFFERS_SORT_FIELD2" => "id",
 		"OFFERS_SORT_ORDER" => "desc",
