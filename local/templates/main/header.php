@@ -132,196 +132,77 @@
                     )
                 );?>
             </DIV>
-            <DIV class="cat"><A href="/new/">Новинки</A></DIV>
-            <DIV class="cat">
-                <A href="/brandlist/">Бренды</A>
-                <DIV class="sub">
-                    <UL class="centered row">
-                        <LI class="col-18 col-offset-2">
-                            <UL>
-                                <LI><A href="/adidas-originals/">Adidas Originals
-                                    </A>
-                                </LI>
-                                <LI><A href="/aquascutum/">
-                                        Aquascutum                                     </A>
-                                </LI>
-                                <LI><A href="/arcteryx/">
-                                        Arcteryx                                     </A>
-                                </LI>
-                                <LI><A href="/armor-lux/">
-                                        Armor-Lux                                     </A>
-                                </LI>
-                                <LI><A href="/asics/">
-                                        ASICS                                     </A>
-                                </LI>
-                                <LI><A href="/barbour/">
-                                        Barbour                                     </A>
-                                </LI>
-                                <LI><A href="/baxter-of-california/">
-                                        Baxter of California
-                                    </A>
-                                </LI>
-                                <LI><A href="/billionaire-boys-club/">
-                                        Billionaire Boys Club
-                                    </A>
-                                </LI>
-                                <LI><A href="/brooks-england/">
-                                        Brooks England                                     </A>
-                                </LI>
-                                <LI><A href="/cp-company/">
-                                        C.P. Company                                     </A>
-                                </LI>
-                            </UL>
-                        </LI>
-                        <LI class="col-18 col-offset-2">
-                            <UL>
-                                <LI><A href="/carhartt-wip/">
-                                        Carhartt WIP                                     </A>
-                                </LI>
-                                <LI><A href="/casio/">
-                                        CASIO                                     </A>
-                                </LI>
-                                <LI><A href="/champion/">
-                                        Champion                                     </A>
-                                </LI>
-                                <LI><A href="/clarks-originals/">
-                                        Clarks Originals
-                                    </A>
-                                </LI>
-                                <LI><A href="/common-projects/">
-                                        Common Projects                                     </A>
-                                </LI>
-                                <LI><A href="/ellesse/">
-                                        Ellesse                                     </A>
-                                </LI>
-                                <LI><A href="/evisu/">
-                                        Evisu                                     </A>
-                                </LI>
-                                <LI><A href="/fjallraven/">
-                                        Fjallraven                                     </A>
-                                </LI>
-                                <LI><A href="/fred-perry/">
-                                        Fred Perry                                     </A>
-                                </LI>
-                                <LI><A href="/hackett/">
-                                        Hackett                                     </A>
-                                </LI>
-                            </UL>
-                        </LI>
-                        <LI class="col-18 col-offset-2">
-                            <UL>
-                                <LI><A href="/han-kjobenhavn/">
-                                        Han Kjobenhavn                                     </A>
-                                </LI>
-                                <LI><A href="/herschel-supply-co/">
-                                        Herschel Supply Co.
-                                    </A>
-                                </LI>
-                                <LI><A href="/hestra/">
-                                        Hestra                                     </A>
-                                </LI>
-                                <LI><A href="/lacoste/">
-                                        Lacoste                                     </A>
-                                </LI>
-                                <LI><A href="/levis/">
-                                        Levi's                                     </A>
-                                </LI>
-                                <LI><A href="/lyle-and-scott/">
-                                        Lyle &amp; Scott                                     </A>
-                                </LI>
-                                <LI><A href="/maison-kitsune/">
-                                        Maison Kitsune                                     </A>
-                                </LI>
-                                <LI><A href="/master-piece/">
-                                        Master-piece                                     </A>
-                                </LI>
-                                <LI><A href="/mismo/">
-                                        Mismo                                     </A>
-                                </LI>
-                                <LI><A href="/nanamica/">
-                                        Nanamica                                     </A>
-                                </LI>
-                            </UL>
-                        </LI>
-                        <LI class="col-18 col-offset-2">
-                            <UL>
-                                <LI><A href="/napapijri/">
-                                        Napapijri                                     </A>
-                                </LI>
-                                <LI><A href="/new-balance/">
-                                        New Balance                                     </A>
-                                </LI>
-                                <LI><A href="/nike/">
-                                        Nike                                     </A>
-                                </LI>
-                                <LI><A href="/norse-projects/">
-                                        Norse Projects                                     </A>
-                                </LI>
-                                <LI><A href="/patagonia/">
-                                        Patagonia                                     </A>
-                                </LI>
-                                <LI><A href="/peaceful-hooligan/">
-                                        Peaceful Hooligan
-                                    </A>
-                                </LI>
-                                <LI><A href="/penfield/">
-                                        Penfield                                     </A>
-                                </LI>
-                                <LI><A href="/property-of/">
-                                        Property Of…                                     </A>
-                                </LI>
-                                <LI><A href="/puma/">Puma
-                                    </A>
-                                </LI>
-                                <LI><A href="/red-wing-shoes/">
-                                        Red Wing Shoes
-                                    </A>
-                                </LI>
-                            </UL>
-                        </LI>
-                        <LI class="col-18 col-offset-2">
-                            <UL>
-                                <LI><A href="/reebok/">
-                                        Reebok                                     </A>
-                                </LI>
-                                <LI><A href="/reigning-champ/">
-                                        Reigning Champ                                     </A>
-                                </LI>
-                                <LI><A href="/saucony/">
-                                        Saucony                                     </A>
-                                </LI>
-                                <LI><A href="/stone-island/">
-                                        Stone Island                                     </A>
-                                </LI>
-                                <LI><A href="/stussy/">
-                                        Stussy                                     </A>
-                                </LI>
-                                <LI><A href="/the-north-face/">
-                                        The North Face                                     </A>
-                                </LI>
-                                <LI><A href="/uniformes-generale/">
-                                        Uniformes Generale
-                                    </A>
-                                </LI>
-                                <LI><A href="/universal-works/">
-                                        Universal Works                                     </A>
-                                </LI>
-                                <LI><A href="/weekend-offender/">
-                                        Weekend Offender
-                                    </A>
-                                </LI>
-                                <LI class="allbrands"><A href="/brandlist/">Показать все
-                                        бренды</A>
-                                </LI>
-                            </UL>
-                        </LI>
-                    </UL>
-                </DIV>
-                <DIV class="shadow"></DIV>
-            </DIV>
+            
+            <?$APPLICATION->IncludeComponent(
+	"bitrix:news.list", 
+	"brandmenu", 
+	array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"CHECK_DATES" => "Y",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"FIELD_CODE" => array(
+			0 => "ID",
+			1 => "CODE",
+			2 => "NAME",
+			3 => "SORT",
+			4 => "",
+		),
+		"FILTER_NAME" => "",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "5",
+		"IBLOCK_TYPE" => "references",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "20",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Новости",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"SET_BROWSER_TITLE" => "N",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N",
+		"SORT_BY1" => "NAME",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "ASC",
+		"SORT_ORDER2" => "ASC",
+		"COMPONENT_TEMPLATE" => "brandmenu"
+	),
+	false
+);?>
             <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	"catalog_horizontal1", 
+	"catalog_horizontal1",
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left_bottom",
@@ -334,8 +215,7 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "left",
 		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "catalog_horizontal1",
-		"MENU_THEME" => "site"
+		"COMPONENT_TEMPLATE" => "topmenu"
 	),
 	false
 );?>
