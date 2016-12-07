@@ -1,7 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
-?><?$APPLICATION->IncludeComponent(
+?><div style="margin-top: 20px;">
+<?$APPLICATION->IncludeComponent(
 	"bitrix:catalog",
 	"",
 	Array(
@@ -190,4 +191,5 @@ $APPLICATION->SetTitle("");
 		"USE_SALE_BESTSELLERS" => "Y",
 		"USE_STORE" => "Y"
 	)
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+</div><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

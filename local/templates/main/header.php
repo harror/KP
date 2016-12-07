@@ -334,20 +334,16 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "left",
 		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "topmenu"
+		"COMPONENT_TEMPLATE" => "topmenu",
+		"MENU_THEME" => "site"
 	),
 	false
 );?>
 
 
             <DIV class="right">
-                <A class="wishlist"
-                   href="/wishlist/"><SPAN>Избранное</SPAN>
-                </A>
-                <DIV class="cart" href="/cart/">
-                    <SPAN>Корзина</SPAN>
-                    <DIV class="badge">0</DIV>
-                    <DIV class="tooltip pushright" id="minicart"></DIV>
+                <DIV class="cart">
+                    <SPAN><a href="/personal/cart/" class="wishlist">Корзина</a></SPAN>
                 </DIV>
             </DIV>
         </NAV>
@@ -429,114 +425,7 @@
         
 		<?endif;?>
 	   <DIV class="centered main home">
-	   <?if ($GLOBALS["APPLICATION"]->GetCurPage(true) == "/index.php"):?> 
-            <H2><A href="/new/">Новые поступления</A></H2>
-            <DIV class="row newproducts">
-                <A title="Nike Мужские зимние кроссовки Air Max 95 Sneakerboot Dark Loden/Cargo Khaki/Bright"
-                   class="pr col-25" href="/goods/11279/muzhskie-krossovki-nike-air-max-95-sneakerboot-dark-loden-cargo-khaki/">
-                    <DIV class="thumb"><IMG alt="Nike Мужские зимние кроссовки Air Max 95 Sneakerboot Dark Loden/Cargo Khaki/Bright"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/muzhskie-krossovki-nike-air-max-95-sneakerboot-dark-loden-cargo-khaki-1-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">10 890<EM class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Мужские зимние кроссовки</SPAN><SPAN>Air Max 95 Sneakerboot Dark
-                           Loden/Cargo Khaki/Bright</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Мужские зимние кроссовки Air Max 90 Mid Winter Black/Black"
-                   class="pr col-25" href="/goods/10427/krossovki-muzhskie-nike-air-max-90-mid-winter-utility-black-black/">
-                    <DIV class="thumb"><IMG alt="Nike Мужские зимние кроссовки Air Max 90 Mid Winter Black/Black"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/krossovki-muzhskie-nike-air-max-90-mid-winter-utility-black-black-1-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                9 890<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Мужские зимние кроссовки</SPAN><SPAN>Air Max 90 Mid Winter
-                           Black/Black</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Мужские зимние кроссовки Air Max 90 Mid Winter Dark Loden/Black/Dark Grey"
-                   class="pr col-25" href="/goods/18754/muzhskie-krossovki-nike-air-max-90-mid-winter-dark-loden-black-dark-grey/">
-                    <DIV class="thumb"><IMG alt="Nike Мужские зимние кроссовки Air Max 90 Mid Winter Dark Loden/Black/Dark Grey"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/muzhskie-krossovki-nike-air-max-90-mid-winter-dark-loden-black-dark-grey-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                9 890<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Мужские зимние кроссовки</SPAN><SPAN>Air Max 90 Mid Winter Dark
-                           Loden/Black/Dark Grey</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Кроссовки Air Footscape NM Hyper Cobalt/Black/Summit White"
-                   class="pr col-25" href="/goods/19841/muzhskie-krossovki-nike-air-footscape-nm-hyper-cobalt-black-summit-white/">
-                    <DIV class="thumb"><IMG alt="Nike Кроссовки Air Footscape NM Hyper Cobalt/Black/Summit White"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/muzhskie-krossovki-nike-air-footscape-nm-hyper-cobalt-black-summit-white-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                7 890<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Кроссовки</SPAN><SPAN>Air Footscape NM Hyper Cobalt/Black/Summit
-                           White</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Женские кроссовки Air Max 95 Premium Safari Pack Black/Dark Cayenne/Rio Teal"
-                   class="pr col-25" href="/goods/19743/zhenskie-krossovki-nike-air-max-95-premium-safari-pack-black-dark-cayenne-rio-teal/">
-                    <DIV class="thumb"><IMG alt="Nike Женские кроссовки Air Max 95 Premium Safari Pack Black/Dark Cayenne/Rio Teal"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/zhenskie-krossovki-nike-air-max-95-premium-safari-pack-black-dark-cayenne-rio-teal-1_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                11 890<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Женские кроссовки</SPAN><SPAN>Air Max 95 Premium Safari Pack
-                           Black/Dark Cayenne/Rio Teal</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Женские кроссовки Beautiful Air Huarache Ultra Premium Black/Black"
-                   class="pr col-25" href="/goods/19534/zhenskie-krossovki-nike-beautiful-air-huarache-ultra-premium-black-black/">
-                    <DIV class="thumb"><IMG alt="Nike Женские кроссовки Beautiful Air Huarache Ultra Premium Black/Black"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/zhenskie-krossovki-nike-beautiful-air-huarache-ultra-premium-black-black-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                9 390<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Женские кроссовки</SPAN><SPAN>Beautiful Air Huarache Ultra
-                           Premium Black/Black</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Женские кроссовки Air Max 90 Essential Grey/Ghost Green/Dark Grey"
-                   class="pr col-25" href="/goods/18289/zhenskie-krossovki-nike-air-max-90-essential-grey-ghost-green-dark-grey/">
-                    <DIV class="thumb"><IMG alt="Nike Женские кроссовки Air Max 90 Essential Grey/Ghost Green/Dark Grey"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/zhenskie-krossovki-nike-air-max-90-essential-grey-ghost-green-dark-grey-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                8 390<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Женские кроссовки</SPAN><SPAN>Air Max 90 Essential Grey/Ghost
-                           Green/Dark Grey</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-                <A title="Nike Подростковые кроссовки Air Huarache Run GS Triple Black"
-                   class="pr col-25" href="/goods/19044/podrostkovie-krossovki-nike-air-huarache-run-gs-triple-black/">
-                    <DIV class="thumb"><IMG alt="Nike Подростковые кроссовки Air Huarache Run GS Triple Black"
-                                            src="<?=SITE_TEMPLATE_PATH;?>/images/podrostkovie-krossovki-nike-air-huarache-run-gs-triple-black-0_450x450.jpg">
-                    </DIV>
-                    <DIV class="info">
-                        <DIV class="price">                                5 490<EM
-                                class="currency">р</EM>                             </DIV>
-                        <H2>Nike <SPAN>Подростковые кроссовки</SPAN><SPAN>Air Huarache Run GS Triple
-                           Black</SPAN>
-                        </H2>
-                    </DIV>
-                </A>
-            </DIV>
-            <?endif;?>
+
 <?if ($GLOBALS["APPLICATION"]->GetCurPage(true) != "/index.php"):?> 			
 <div id="mfilter-content-container">
     <div class="centered row">
