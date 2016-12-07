@@ -50,7 +50,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 	)
 );?>
 <h2>Тренды сезона</h2>
- <?$APPLICATION->IncludeComponent("bitrix:catalog.section", "topcatalog", Array(
+ <?$APPLICATION->IncludeComponent("bitrix:catalog.section", "", Array(
 	"ACTION_VARIABLE" => "action",	// Название переменной, в которой передается действие
 		"ADD_PICT_PROP" => "-",	// Дополнительная картинка основного товара
 		"ADD_PROPERTIES_TO_BASKET" => "Y",	// Добавлять в корзину свойства товаров и предложений

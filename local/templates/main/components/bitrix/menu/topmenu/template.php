@@ -19,7 +19,6 @@
                             ?>
 
                             <? if ($arItemInner['DEPTH_LEVEL'] == 2): ?>
-
                                 <LI class="col-18 col-offset-2">
                                     <DIV class="title"><A
                                             href="<?=$arItemInner["LINK"];?>"><?=$keyInner?><?=$arItemInner["TEXT"];?></A></DIV>

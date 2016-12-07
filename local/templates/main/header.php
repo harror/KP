@@ -321,7 +321,7 @@
             </DIV>
             <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	"topmenu", 
+	"catalog_horizontal1", 
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "left_bottom",
@@ -334,7 +334,7 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "left",
 		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "topmenu",
+		"COMPONENT_TEMPLATE" => "catalog_horizontal1",
 		"MENU_THEME" => "site"
 	),
 	false
